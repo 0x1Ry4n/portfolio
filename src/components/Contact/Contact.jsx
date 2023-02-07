@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
-  const [email, setEmail] = useState(false);
+  const [email, setEmail] = useState(null);
 
   const contact_info = [
     { logo: "mail", text: "ryanlucas2018gz@gmail.com" },
@@ -56,16 +56,22 @@ const Contact = () => {
               name="user_name"
               type="text"
               placeholder="Digite seu nome..."
+              maxLength={150}
+              required
             />
             <input
               name="user_email"
               type="Email"
               placeholder="Digite seu endereço de email..."
+              maxLength={250}
+              required
             />
             <textarea
               name="user_message"
               placeholder="Digite sua mensagem..."
               rows={10}
+              maxLength={1200}
+              required
             ></textarea>
             <button className="btn-primary w-fit shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
               Enviar Mensagem
@@ -90,10 +96,12 @@ const Contact = () => {
         </div>
       </div>
       <br />
-      {email ? (
-        <SimpleAlert variant="filled" severity="success" />
+      {email === null ? (
+        <SimpleAlert open={null} variant="filled" severity="success" />
+      ) : email ? (
+        <SimpleAlert open={true} variant="filled" severity="success" />
       ) : (
-        <SimpleAlert variant="filled" severity="error" />
+        <SimpleAlert open={true} variant="filled" severity="error" />
       )}
     </section>
   );

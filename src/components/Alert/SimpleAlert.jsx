@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Stack, Alert, AlertTitle, Collapse } from "@mui/material";
 
 const SimpleAlert = (props) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(null);
+
+  useEffect(() => {
+    if (props.open) setOpen(true);
+    else setOpen(false);
+  }, [props]);
+
   return (
-    <Stack sx={{ position: "relative", width: "25%", float: "right" }}>
+    <Stack
+      sx={{
+        position: "relative",
+        width: "50%",
+        float: "right",
+        display: "inline",
+      }}
+    >
       <Collapse in={open}>
         <Alert
           severity={props.severity}

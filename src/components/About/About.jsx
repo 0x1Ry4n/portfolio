@@ -2,7 +2,7 @@ import React from "react";
 import aboutImg from "../../assets/images/perfil.gif";
 const About = () => {
   const info = [
-    { text: "Anos de estudo", count: "03" },
+    { text: "Anos de estudo", count: "04" },
     { text: "Projetos mantidos", count: "08" },
     { text: "Experiência profissional", count: "00" },
   ];
@@ -18,14 +18,14 @@ const About = () => {
             <div className="text-gray-300 my-3">
               <p className="text-justify break-all leading-7 w-11/12 mx-auto text-lg">
                 Sou um desenvolvedor web em busca da primeira experiência
-                profissional. Domínio razoável de HTML, CSS, princípios de
-                Javascript e alguns de seus frameworks/libs (React, React
-                Native, Node.js e Next.js), conhecimento intermediário da
-                linguagem PHP, entendimento de Git, conhecimentos em banco de
-                dados SQL e MongoDB e aspirante em C/C++. Apaixonado por
-                tecnologia desde quando me conheço por gente, tenho muito a
-                aprender e estou à disposição para desenvolver minhas
-                habilidades técnicas, comunicativas e colaborativas.
+                profissional. Tenho proeficiência em HTML, CSS, princípios de
+                Javascript e alguns de seus frameworks/libs (React.js, Node.js e
+                Next.js), conhecimento intermediário da linguagem PHP,
+                entendimento de Git, conhecimentos em banco de dados SQL e
+                MongoDB e sou aspirante em C/C++. Apaixonado por tecnologia
+                desde quando me conheço por gente, tenho muito a aprender e
+                estou à disposição para desenvolver minhas habilidades técnicas,
+                comunicativas e colaborativas.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

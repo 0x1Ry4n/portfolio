@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Plane from "../Plane/Plane";
+import Ghost from "../Ghosts/Ghost";
 import hero from "../../assets/images/hero.png";
 const Hero = () => {
   const el = useRef(null);
@@ -61,7 +61,7 @@ const Hero = () => {
             Fullstack Developer <span className="text-white">#opentowork</span>
           </h4>
           <button className="btn-primary mt-8 shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
-            Contate-me
+            <a href="#contact">Contate-me</a>
           </button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((social) => (
@@ -78,7 +78,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="">
-        <Plane />
+        <Ghost />
       </div>
     </section>
   );
