@@ -3,7 +3,7 @@ import "../../styles/ghost.scss";
 
 const Ghost = () => {
   return (
-    <div className="container absolute bottom-0 left-0 hidden sm:flex gap-[75%] justify-between">
+    <div className="container absolute bottom-0 left-0 justify-between xl:gap-[120%] md:gap-[25%] p-5 ml-6 lg:p-10 top-[70%] hidden sm:flex">
       <div className="ghostOne">
         <svg
           className="ghost"
@@ -124,7 +124,7 @@ const Ghost = () => {
           </svg>
         </p>
       </div>
-      <div className="ghostTwo">
+      <div className="ghostTwo bottom-0 right-0">
         <svg
           className="ghost"
           version="1.1"

@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav
       data-aos="fade-down"
       className={`fixed w-full left-0 top-0 z-[999] ${
-        sticky ? "bg-zinc-700  text-white" : "text-white"
+        sticky ? "bg-gray-800  text-white" : "text-white"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -44,14 +44,14 @@ const Navbar = () => {
         <div
           onClick={() => setOpen(!open)}
           className={`z-[999]  ${
-            open ? "text-gray-900" : "text-gray-100"
+            open ? "text-white" : "text-gray-100"
           } text-3xl md:hidden m-5`}
         >
           <ion-icon name="menu"></ion-icon>
         </div>
         <div
           className={`md:hidden  absolute w-2/3 h-screen
-      px-7 py-2 font-medium bg-transparentGray top-0 duration-300 ${
+      px-7 py-2 font-medium bg-gray-900 top-0 duration-300 ${
         open ? "right-0" : "right-[-100%]"
       }`}
         >

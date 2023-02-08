@@ -14,6 +14,7 @@ module.exports = {
         gold: "#B28228",
         mediumGray: "text-gray-600",
         transparentGray: "rgb(40, 39, 42, 0.9)",
+        highGray: "text-gray-900",
       },
       keyframes: {
         float: {

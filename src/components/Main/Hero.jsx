@@ -15,7 +15,6 @@ const Hero = () => {
       loop: true,
     });
 
-    // Destroying
     return () => {
       typed.destroy();
     };
@@ -57,7 +56,7 @@ const Hero = () => {
             Meu nome é <span ref={el}></span>
           </h1>
           <br />
-          <h4 className="md:text-2xl inline text-lg md:leading-normal leading-5 mt-4 w-[43%] p-3 font-bold text-gold bg-gray-800">
+          <h4 className="md:text-2xl inline text-lg md:leading-normal leading-5 mt-4 p-3 font-bold text-gold bg-gray-800">
             Fullstack Developer <span className="text-white">#opentowork</span>
           </h4>
           <button className="btn-primary mt-8 shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
