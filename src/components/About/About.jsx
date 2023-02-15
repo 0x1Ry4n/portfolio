@@ -40,7 +40,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../../src/assets/Curriculum - Ryan Lucas.pdf" download>
+              <a href="../../assets/Curriculum.pdf" download>
                 <button className="btn-primary shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
                   Download CV
                 </button>
