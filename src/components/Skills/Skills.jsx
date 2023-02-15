@@ -29,7 +29,7 @@ const Skills = () => {
     },
     {
       logo: "add-circle-outline",
-      level: "...",
+      level: "learning...",
     },
   ];
   return (
