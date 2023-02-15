@@ -4,7 +4,6 @@ const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const menuLinks = [
-    { name: "HOME", link: "#home" },
     { name: "SOBRE", link: "#about" },
     { name: "HABILIDADES", link: "#skills" },
     { name: "PROJETOS", link: "#projects" },
@@ -34,6 +33,10 @@ const Navbar = () => {
           } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
+            <ion-icon
+              name="contrast-outline"
+              className="hover:cursor-pointer "
+            ></ion-icon>
             {menuLinks?.map((menu, i) => (
               <li key={i} className="px-6 hover:text-gold">
                 <a href={menu?.link}>{menu?.name}</a>
@@ -56,6 +59,8 @@ const Navbar = () => {
       }`}
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
+            <ion-icon name="contrast-outline"></ion-icon>
+
             {menuLinks?.map((menu, i) => (
               <li onClick={() => setOpen(false)} key={i} className="px-6">
                 <a href={menu?.link}>{menu?.name}</a>

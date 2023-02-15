@@ -40,9 +40,9 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../../assets/Curriculum.pdf" download>
+              <a href="../../src/assets/Curriculum.pdf" target="_blank">
                 <button className="btn-primary shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
-                  Download CV
+                  Visualizar CV
                 </button>
               </a>
             </div>

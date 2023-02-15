@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "../styles/portfolio.css";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -17,7 +18,7 @@ const Portfolio = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="background">
       <Navbar />
       <Hero />
       <About />

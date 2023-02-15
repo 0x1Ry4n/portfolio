@@ -1,0 +1,24 @@
+.background {
+  background: linear-gradient(
+    0.33turn,
+    rgb(121, 94, 44),
+    rgb(27, 27, 27),
+    rgb(29, 29, 29),
+    rgb(121, 94, 44)
+  );
+  background-size: 400% 400%;
+  animation: GradientBackground 12s ease infinite;
+  z-index: 0;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
