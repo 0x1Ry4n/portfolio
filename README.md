@@ -6,7 +6,7 @@
 
 <h2>🛠️ How Build?</h2>
 <ul>
-  <li>Run <code>npm run dev</code> to initialize the client in development environment </li>
+  <li>Run <code>npm run dev</code> to initialize the client in development environment. </li>
 </ul>
 
 <br>
