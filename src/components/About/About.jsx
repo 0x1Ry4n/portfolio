@@ -40,7 +40,11 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../../src/assets/Curriculum.pdf" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1eZWGHvQAmJGA_LTqzP9EpXCaH3kFeo-3/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn-primary shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
                   Visualizar CV
                 </button>
