@@ -55,8 +55,6 @@ const Navbar = () => {
       }`}
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
-            <ion-icon name="contrast-outline"></ion-icon>
-
             {menuLinks?.map((menu, i) => (
               <li onClick={() => setOpen(false)} key={i} className="px-6">
                 <a href={menu?.link}>{menu?.name}</a>
