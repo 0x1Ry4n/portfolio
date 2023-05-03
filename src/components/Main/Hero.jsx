@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Ghost from "../Ghosts/Ghost";
 import hero from "../../assets/images/hero.png";
+
 const Hero = () => {
   const el = useRef(null);
 
@@ -76,9 +76,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <Ghost />
-      </div>
+      <div className=""></div>
     </section>
   );
 };
