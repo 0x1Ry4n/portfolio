@@ -76,7 +76,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className=""></div>
     </section>
   );
 };

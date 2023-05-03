@@ -64,7 +64,7 @@ const Project = () => {
     },
   ];
   return (
-    <section id="projects" className="py-16 text-white">
+    <section id="projects" className="min-h-screenpy-16 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
           Meus <span className="text-gold">Projetos</span>

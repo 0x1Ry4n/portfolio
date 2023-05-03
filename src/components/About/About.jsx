@@ -7,7 +7,7 @@ const About = () => {
     { text: "Experiência profissional", count: "00" },
   ];
   return (
-    <section id="about" className="py-10 text-white">
+    <section id="about" className="py-5 text-white">
       <div className="text-center mt-6">
         <h3 className="text-4xl font-semibold">
           Sobre <span className="text-gold">Mim</span>
