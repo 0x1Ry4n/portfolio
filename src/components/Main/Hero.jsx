@@ -31,7 +31,7 @@ const Hero = () => {
     },
     {
       icon: "logo-instagram",
-      link: "https://www.instagram.com/ryan_luckz",
+      link: "https://www.instagram.com/ryan_luckaz",
     },
   ];
   return (
@@ -57,7 +57,7 @@ const Hero = () => {
           </h1>
           <br />
           <h4 className="md:text-2xl inline text-lg md:leading-normal leading-5 mt-4 p-3 font-bold text-gold bg-gray-800">
-            Fullstack Developer <span className="text-white">#opentowork</span>
+            Developer <span className="text-white">#learning #opentowork</span>
           </h4>
           <button className="btn-primary mt-8 shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
             <a href="#contact">Contate-me</a>

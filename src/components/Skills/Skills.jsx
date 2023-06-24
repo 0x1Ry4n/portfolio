@@ -28,12 +28,17 @@ const Skills = () => {
       count: 40,
     },
     {
+      logo: "logo-python", 
+      level: "Iniciante", 
+      count: 40,
+    },
+    {
       logo: "add-circle-outline",
       level: "learning...",
     },
   ];
   return (
-    <section id="skills" className="py-10 relative">
+    <section id="skills" className="py-20 relative">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           Minhas <span className="text-[#B28228]">Habilidades</span>
@@ -41,11 +46,11 @@ const Skills = () => {
         <p className="text-gray-400 mt-3 text-lg">
           Algumas das minhas habilidades
         </p>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap animate-floatAnimation">
+        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap flex-grow-0 animate-floatAnimation">
           {skills?.map((skill, i) => (
-            <div
+            <div  
               key={i}
-              className="border-2 group border-[#B28228] relative min-w-[10rem] max-w-[16rem] bg-[#3B3B3B] p-10 rounded-xl  shadow-3xl"
+              className="border-2 group border-[#B28228] relative min-w-[10rem] max-w-[16rem] bg-[#3B3B3B] p-10 rounded-xl shadow-3xl"
             >
               <div
                 style={{

@@ -2,9 +2,9 @@ import React from "react";
 import aboutImg from "../../assets/images/perfil.gif";
 const About = () => {
   const info = [
-    { text: "Anos de estudo", count: "04" },
+    { text: "Anos de estudo", count: "03" },
     { text: "Projetos mantidos", count: "08" },
-    { text: "Experiência profissional", count: "00" },
+    { text: "Experiência profissional", count: "3 meses" },
   ];
   return (
     <section id="about" className="py-5 text-white">
@@ -17,15 +17,8 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify break-all leading-7 w-11/12 mx-auto text-lg">
-                Sou um desenvolvedor web em busca da primeira experiência
-                profissional. Tenho proeficiência em HTML, CSS, princípios de
-                Javascript e alguns de seus frameworks/libs (React.js, Node.js e
-                Next.js), conhecimento intermediário da linguagem PHP,
-                entendimento de Git, conhecimentos em banco de dados SQL e
-                MongoDB e sou aspirante em C/C++. Apaixonado por tecnologia
-                desde quando me conheço por gente, tenho muito a aprender e
-                estou à disposição para desenvolver minhas habilidades técnicas,
-                comunicativas e colaborativas.
+              Sou um desenvolvedor em constante processo de aprendizado. Tenho proficiência sólida em HTML, CSS e JavaScript, e conhecimentos em frameworks/libs populares, como React.js, Node.js e Next.js.
+              Além disso, possuo habilidades básicas na linguagem PHP, conceitos de banco de dados relacionais e não relacionais. Atualmente estou estagiando como desenvolvedor low-level, aprendendo micropython e adentrando nesse novo mundo.  
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div className="page-container">
       <h1 className="title">
-        Erro <span className="text-gold">404!</span>
+        💀 Erro <span className="text-gold">404!</span>
         <br />
         Página não encontrada!
       </h1>
