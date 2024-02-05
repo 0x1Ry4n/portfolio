@@ -3,34 +3,34 @@ import React from "react";
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
-      level: "Avançado",
-      count: 80,
-    },
-    {
-      logo: "logo-css3",
-      level: "Intermediário",
-      count: 60,
+      logo: "logo-python", 
+      level: "Intermediário", 
+      count: 75,
     },
     {
       logo: "logo-javascript",
       level: "Intermediário",
-      count: "60",
+      count: 63,
     },
     {
       logo: "logo-nodejs",
-      level: "Iniciante",
+      level: "Intermediário",
+      count: 50,
+    },
+    {
+      logo: "logo-docker",
+      level: "Intermediário",
       count: 40,
     },
     {
-      logo: "logo-react",
-      level: "Iniciante",
-      count: 40,
+      logo: "logo-html5",
+      level: "Básico",
+      count: 30,
     },
     {
-      logo: "logo-python", 
-      level: "Iniciante", 
-      count: 40,
+      logo: "logo-css3",
+      level: "Básico",
+      count: 30,
     },
     {
       logo: "add-circle-outline",

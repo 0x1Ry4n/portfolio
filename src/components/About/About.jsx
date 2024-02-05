@@ -2,9 +2,9 @@ import React from "react";
 import aboutImg from "../../assets/images/perfil.gif";
 const About = () => {
   const info = [
-    { text: "Anos de estudo", count: "03" },
-    { text: "Projetos mantidos", count: "08" },
-    { text: "Experiência profissional", count: "3 meses" },
+    { text: "Anos de estudo", count: "02" },
+    { text: "Projetos mantidos", count: "03" },
+    { text: "Experiência profissional", count: "11 meses" },
   ];
   return (
     <section id="about" className="py-5 text-white">
@@ -17,8 +17,7 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify break-all leading-7 w-11/12 mx-auto text-lg">
-              Sou um desenvolvedor em constante processo de aprendizado. Tenho proficiência sólida em HTML, CSS e JavaScript, e conhecimentos em frameworks/libs populares, como React.js, Node.js e Next.js.
-              Além disso, possuo habilidades básicas na linguagem PHP, conceitos de banco de dados relacionais e não relacionais. Atualmente estou estagiando como desenvolvedor low-level, aprendendo micropython e adentrando nesse novo mundo.  
+              Sou um desenvolvedor dedicado em constante busca por aprendizado. Possuo proficiência em Python, JavaScript e NodeJS, além de compreensão em bancos de dados relacionais e não relacionais. Como desenvolvedor Python crio API's REST MVC, e utilizando o Python como base, já explorei a linguagem Micropython para programação de dispositivos embarcados, especialmente em placas ESP32 (WT32-ETH01 e WROOM-32D). Trabalhei também com visão computacional, aplicando conceitos da biblioteca OpenCV para detecção e reconhecimento de imagens. Além disso, utilizei NodeJS na manutenção de API's REST consumidas por webapps. Ao longo desse percurso, integrei a tecnologia Docker em meu workflow, aprimorando a eficiência no desenvolvimento, teste e implantação de software.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
@@ -34,7 +33,7 @@ const About = () => {
               <br />
               <br />
               <a
-                href="https://drive.google.com/file/d/1eZWGHvQAmJGA_LTqzP9EpXCaH3kFeo-3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1fwlq1U7bPQtFmEeb5KtX_ba-dypK8QK_/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
