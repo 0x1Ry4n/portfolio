@@ -4,7 +4,7 @@ const About = () => {
   const info = [
     { text: "Anos de estudo", count: "02" },
     { text: "Projetos mantidos", count: "03" },
-    { text: "Experiência profissional", count: "11 meses" },
+    { text: "Experiência profissional", count: "1 ano " },
   ];
   return (
     <section id="about" className="py-5 text-white">

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt, FaReact, FaReceipt  } from "react-icons/fa";
 import { SiTypescript, SiMicropython, SiMongodb  } from "react-icons/si";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -8,61 +8,79 @@ import { BiLogoPostgresql } from "react-icons/bi";
 const Skills = () => {
   const skills = [
     {
+      title: "HTML5",
       logo:  <FaHtml5 />,
       level: "Avançado",
       count: 90,
     },
     {
+      title: "CSS3",
       logo: <FaCss3Alt />,
       level: "Intermediário",
       count: 70,
-    },
+    },  
     {
+      title: "Javascript",
       logo: <IoLogoJavascript />,
       level: "Intermediário",
       count: 60,
     },
     {
+      title: "Git",
       logo: <FaGitAlt />,
       level: "Intermediário",
       count: 60,
     },
     {
+      title: "Typescript",
       logo: <SiTypescript/>,
       level: "Intermediário",
       count: 60,
     },
     {
+      title: "NodeJS",
       logo: <IoLogoNodejs/>,
       level: "Intermediário",
       count: 50,
     },
     {
+      title: "Python",
       logo: <FaPython />,
       level: "Intermediário",
       count: 50,
     },
     {
+      title: "Micropython",
       logo: <SiMicropython />,
       level: "Intermediário",
       count: 50,
     },
     {
+      title: "PostgreSQL",
       logo: <BiLogoPostgresql />,
       level: "Intermediário",
       count: 40
     },
     {
+      title: "MongoDB",
       logo: <SiMongodb />,
       level: "Básico",
       count: 30
     },
     {
+      title: "ReactJS",
+      logo: <FaReact />,
+      level: "Básico",
+      count: 30
+    },
+    {
+      title: "Docker",
       logo: <FaDocker />,
       level: "Básico",
       count: 30
     },
     {
+      title: "AWS",
       logo: <FaAws />,
       level: "Básico",
       count: 20
@@ -93,7 +111,7 @@ const Skills = () => {
                   {skill.logo}
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              <p title={skill.title} className="text-xl mt-3">{skill.level}</p>
             </div>
           ))}
         </div>
