@@ -116,7 +116,7 @@ const Project = () => {
 
   const getProjectIcon = (type) => {
     switch (type) {
-      case "Prossional":
+      case "Profissional":
         return <GrUserWorker className="inline-block mr-1" />;
       case "Pessoal":
         return <IoPerson className="inline-block mr-1" />;
