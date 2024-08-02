@@ -1,41 +1,72 @@
 import React from "react";
+import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import { SiTypescript, SiMicropython, SiMongodb  } from "react-icons/si";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
+import { BiLogoPostgresql } from "react-icons/bi";
+
 
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-python", 
-      level: "Intermediário", 
-      count: 75,
+      logo:  <FaHtml5 />,
+      level: "Avançado",
+      count: 90,
     },
     {
-      logo: "logo-javascript",
+      logo: <FaCss3Alt />,
       level: "Intermediário",
-      count: 63,
+      count: 70,
     },
     {
-      logo: "logo-nodejs",
+      logo: <IoLogoJavascript />,
+      level: "Intermediário",
+      count: 60,
+    },
+    {
+      logo: <FaGitAlt />,
+      level: "Intermediário",
+      count: 60,
+    },
+    {
+      logo: <SiTypescript/>,
+      level: "Intermediário",
+      count: 60,
+    },
+    {
+      logo: <IoLogoNodejs/>,
       level: "Intermediário",
       count: 50,
     },
     {
-      logo: "logo-docker",
+      logo: <FaPython />,
       level: "Intermediário",
-      count: 40,
+      count: 50,
     },
     {
-      logo: "logo-html5",
+      logo: <SiMicropython />,
+      level: "Intermediário",
+      count: 50,
+    },
+    {
+      logo: <BiLogoPostgresql />,
+      level: "Intermediário",
+      count: 40
+    },
+    {
+      logo: <SiMongodb />,
       level: "Básico",
-      count: 30,
+      count: 30
     },
     {
-      logo: "logo-css3",
+      logo: <FaDocker />,
       level: "Básico",
-      count: 30,
+      count: 30
     },
     {
-      logo: "add-circle-outline",
-      level: "learning...",
-    },
+      logo: <FaAws />,
+      level: "Básico",
+      count: 20
+    }
   ];
   return (
     <section id="skills" className="py-20 relative">
@@ -59,7 +90,7 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-[#B28228]">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  {skill.logo}
                 </div>
               </div>
               <p className="text-xl mt-3">{skill.level}</p>
