@@ -105,7 +105,7 @@ const Project = () => {
 
   const getProjectTypeClass = (type) => {
     switch (type) {
-      case "Prossional":
+      case "Profissional":
         return "bg-blue-500";
       case "Pessoal":
         return "bg-green-500";
