@@ -13,6 +13,8 @@ import project14 from "../../assets/images/project14.jpg";
 import project15 from "../../assets/images/project15.png";
 import "swiper/css";
 import "swiper/css/pagination";
+import { IoPerson } from "react-icons/io5";
+import { GrUserWorker } from "react-icons/gr";
 import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
@@ -22,7 +24,7 @@ const Project = () => {
       name: "Watchdog - Wi-Fi e Ethernet (Micropython)",
       github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
-      project_type: "Prossional",
+      project_type: `Prossional`,
     },
     {
       img: project14,
@@ -107,6 +109,17 @@ const Project = () => {
     }
   };
 
+  const getProjectIcon = (type) => {
+    switch (type) {
+      case "Prossional":
+        return <GrUserWorker className="inline-block mr-1" />;
+      case "Pessoal":
+        return <IoPerson className="inline-block mr-1" />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <section id="projects" className="min-h-screenpy-16 py-20 text-white">
       <div className="text-center">
@@ -162,6 +175,7 @@ const Project = () => {
                       Live Demo
                     </a>
                     <p className={`text-white rounded-md px-2 py-1 inline-block ${getProjectTypeClass(project_info.project_type)}`}>
+                      {getProjectIcon(project_info.project_type)}
                       {project_info.project_type}
                     </p>
                   </div>

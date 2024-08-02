@@ -16,8 +16,8 @@ const About = () => {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
-              <p className="text-justify break-all leading-7 w-11/12 mx-auto text-lg">
-              Sou um desenvolvedor dedicado em constante busca por aprendizado. Possuo proficiência em Python, JavaScript e NodeJS, além de compreensão em bancos de dados relacionais e não relacionais. Como desenvolvedor Python crio API's REST MVC, e utilizando o Python como base, já explorei a linguagem Micropython para programação de dispositivos embarcados, especialmente em placas ESP32 (WT32-ETH01 e WROOM-32D). Trabalhei também com visão computacional, aplicando conceitos da biblioteca OpenCV para detecção e reconhecimento de imagens. Além disso, utilizei NodeJS na manutenção de API's REST consumidas por webapps. Ao longo desse percurso, integrei a tecnologia Docker em meu workflow, aprimorando a eficiência no desenvolvimento, teste e implantação de software.
+              <p className="text-justify leading-7 w-11/12 mx-auto text-lg">
+              Sou um desenvolvedor dedicado em constante busca por aprendizado. Possuo proficiência em Python, JavaScript, Typescript e NodeJS, além de compreensão em bancos de dados relacionais e não relacionais. Como desenvolvedor Python crio API's REST MVC, e utilizando o Python como base, já explorei a linguagem Micropython para programação de dispositivos embarcados, especialmente em placas ESP32 (WT32-ETH01 e WROOM-32D). Trabalhei também com visão computacional, aplicando conceitos da biblioteca OpenCV para detecção e reconhecimento de imagens. Além disso, utilizei NodeJS na manutenção de API's REST consumidas por webapps. Ao longo desse percurso, integrei a tecnologia Docker em meu workflow, aprimorando a eficiência no desenvolvimento, teste e implantação de software.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

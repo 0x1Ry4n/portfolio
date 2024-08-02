@@ -4,7 +4,6 @@ import { SiTypescript, SiMicropython, SiMongodb  } from "react-icons/si";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-
 const Skills = () => {
   const skills = [
     {
@@ -93,7 +92,7 @@ const Skills = () => {
           Minhas <span className="text-[#B28228]">Habilidades</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">
-          Algumas das minhas habilidades
+          Lista de habilidades técnicas
         </p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap flex-grow-0 animate-floatAnimation">
           {skills?.map((skill, i) => (
