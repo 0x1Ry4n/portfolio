@@ -18,83 +18,88 @@ import { GrUserWorker } from "react-icons/gr";
 import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
+  const projectType = {
+    work: 'Profissional',
+    personal: 'Pessoal'
+  };
+
   const projects = [
     {
       img: project13,
       name: "Watchdog - Wi-Fi e Ethernet (Micropython)",
       github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
-      project_type: `Prossional`,
+      project_type: projectType.work,
     },
     {
       img: project14,
       name: "Bot de Whatsapp - WppConnect.js (Javascript)",
       github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
-      project_type: "Prossional",
+      project_type: projectType.work,
     },
     {
       img: project15,
       name: "Serviço gRPC de detecção e registro de aruco tags (Python)",
       github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
       live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
-      project_type: "Prossional",
+      project_type: projectType.work,
     },
     {
       img: project5,
       name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
       github_link: "https://github.com/0x1Ry4n/Orgbooks",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project12,
       name: "Orgbooks API - em dev - (Typescript, NodeJS, PostgreSQL)",
       github_link: "https://github.com/0x1Ry4n/orgbooks-typescript.git",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project11,
       name: "Assistente de voz e pose estimation (Python)", 
       github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project9,
       name: "Monitor de Diretórios (Python)", 
       github_link: "https://github.com/0x1Ry4n/directory-monitor.git",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project10,
       name: "Gerador de Crachás (Python)", 
       github_link: "https://github.com/0x1Ry4n/BadgeMaker.git",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project2,
       name: "Landing Page - ReactJS",
       github_link: "https://github.com/0x1Ry4n/landing-page",
       live_link: "https://l4ndingpage.netlify.app/",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project4,
       name: "Calculadora - HTML, CSS e JS",
       github_link: "https://github.com/0x1Ry4n/calculator-js",
       live_link: "https://0x1ry4n.github.io/calculator-js/",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
     {
       img: project7,
       name: "Catch Game - C++",
       github_link: "https://github.com/0x1Ry4n/Catch-game",
       live_link: "",
-      project_type: "Pessoal",
+      project_type: projectType.personal,
     },
   ];
 
