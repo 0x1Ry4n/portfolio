@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt, FaReact, FaReceipt  } from "react-icons/fa";
+import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt, FaReact, FaReceipt, FaJava  } from "react-icons/fa";
 import { SiTypescript, SiMicropython, SiMongodb  } from "react-icons/si";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -22,19 +22,25 @@ const Skills = () => {
       title: "Javascript",
       logo: <IoLogoJavascript />,
       level: "Intermediário",
-      count: 60,
-    },
-    {
-      title: "Git",
-      logo: <FaGitAlt />,
-      level: "Intermediário",
-      count: 60,
+      count: 70,
     },
     {
       title: "Typescript",
       logo: <SiTypescript/>,
       level: "Intermediário",
       count: 60,
+    },
+    {
+      title: "Java",
+      logo:  <FaJava />,
+      level: "Intermediário",
+      count: 50,
+    },
+    {
+      title: "Git",
+      logo: <FaGitAlt />,
+      level: "Intermediário",
+      count: 50,
     },
     {
       title: "NodeJS",

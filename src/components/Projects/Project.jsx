@@ -24,11 +24,20 @@ const Project = () => {
   };
 
   const projects = [
+  
     {
       img: project13,
       name: "Watchdog - Wi-Fi e Ethernet (Micropython)",
       github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      project_type: projectType.work,
+    },
+   
+    {
+      img: project15,
+      name: "Serviço gRPC de detecção e registro de aruco tags (Python)",
+      github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
+      live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
       project_type: projectType.work,
     },
     {
@@ -39,16 +48,16 @@ const Project = () => {
       project_type: projectType.work,
     },
     {
-      img: project15,
-      name: "Serviço gRPC de detecção e registro de aruco tags (Python)",
-      github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
-      live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
-      project_type: projectType.work,
+      img: project12,
+      name: "Stock Api - em dev - (Java, Spring Boot, Docker)",
+      github_link: "https://github.com/0x1Ry4n/api-estoque.git",
+      live_link: "",
+      project_type: projectType.personal,
     },
     {
-      img: project5,
-      name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
-      github_link: "https://github.com/0x1Ry4n/Orgbooks",
+      img: project11,
+      name: "Assistente de voz e pose estimation (Python)", 
+      github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
       live_link: "",
       project_type: projectType.personal,
     },
@@ -60,9 +69,9 @@ const Project = () => {
       project_type: projectType.personal,
     },
     {
-      img: project11,
-      name: "Assistente de voz e pose estimation (Python)", 
-      github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
+      img: project5,
+      name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
+      github_link: "https://github.com/0x1Ry4n/Orgbooks",
       live_link: "",
       project_type: projectType.personal,
     },
@@ -85,13 +94,6 @@ const Project = () => {
       name: "Landing Page - ReactJS",
       github_link: "https://github.com/0x1Ry4n/landing-page",
       live_link: "https://l4ndingpage.netlify.app/",
-      project_type: projectType.personal,
-    },
-    {
-      img: project4,
-      name: "Calculadora - HTML, CSS e JS",
-      github_link: "https://github.com/0x1Ry4n/calculator-js",
-      live_link: "https://0x1ry4n.github.io/calculator-js/",
       project_type: projectType.personal,
     },
     {
