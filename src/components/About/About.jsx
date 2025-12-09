@@ -1,10 +1,9 @@
-import React from "react";
 import aboutImg from "../../assets/images/perfil.gif";
 const About = () => {
   const info = [
-    { text: "📘 Anos de estudo", count: "03" },
-    { text: "💻 Projetos mantidos", count: "05" },
-    { text: "👔 Anos de experiência profissional", count: "02" },
+    { text: "📘 Tempo de estudo (anos)", count: "05" },
+    { text: "💻 Projetos em produção", count: "06" },
+    { text: "👔 Experiência no mercado (anos)", count: "03" },
   ];
   return (
     <section id="about" className="py-5 text-white">
@@ -17,7 +16,8 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto text-lg">
-              Sou um desenvolvedor dedicado, sempre em busca de aprendizado e aprimoramento de habilidades. Atualmente, trabalho com o ERP Sankhya e com tecnologias como Java, JPA e JSP. Embora não seja especialista, já tive experiências relevantes com Python, JavaScript, TypeScript e Node.js. Com Python, desenvolvi APIs REST seguindo o padrão MVC e explorei a linguagem MicroPython para programar dispositivos embarcados, especialmente placas ESP32 como WT32-ETH01 e WROOM-32D. Também apliquei visão computacional utilizando a biblioteca OpenCV para detecção e reconhecimento de imagens. Além disso, trabalhei com Node.js na manutenção de APIs REST para webapps e integrei Docker ao meu fluxo de trabalho, otimizando o desenvolvimento, teste e implantação de soluções. Minha abordagem combina o foco no desenvolvimento de soluções robustas com a capacidade de adaptação a novas tecnologias, sempre buscando agregar valor às necessidades do negócio.              </p>
+                Sou um desenvolvedor dedicado, sempre em busca de aprendizado e aprimoramento de habilidades. Atualmente, trabalho com Delphi e SQL Server na manutenção do ERP da empresa Cozimax, realizando integrações com APIs e desenvolvendo APIs REST utilizando o framework Horse. Também crio plataformas com React Native e atuo com Python em integrações com máquinas para realizar apontamentos automáticos por meio de dispositivos como Raspberry Pi. Tenho experiência com o ERP Sankhya e com tecnologias como Java, JPA e JSP. Embora não seja especialista, já tive vivências relevantes com Python, JavaScript, TypeScript e Node.js. Com Python, desenvolvi APIs REST seguindo o padrão MVC e explorei MicroPython para programar dispositivos embarcados, especialmente placas ESP32 como WT32-ETH01 e WROOM-32D. Também utilizei OpenCV para aplicações de visão computacional voltadas à detecção e reconhecimento de imagens. Em Node.js, atuei na manutenção de APIs REST para webapps e integrei Docker ao meu fluxo de trabalho, otimizando desenvolvimento, testes e implantação. Minha abordagem é orientada à criação de soluções robustas, aliando versatilidade e capacidade de adaptação a novas tecnologias, sempre com foco em gerar valor ao negócio.
+              </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>

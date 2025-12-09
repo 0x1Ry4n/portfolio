@@ -1,7 +1,5 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project2 from "../../assets/images/project2.png";
-import project4 from "../../assets/images/project4.png";
 import project5 from "../../assets/images/project5.jpg";
 import project7 from "../../assets/images/project7.png";
 import project9 from "../../assets/images/project9.png";

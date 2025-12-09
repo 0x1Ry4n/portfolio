@@ -1,4 +1,3 @@
-import React from "react";
 import hireMe from "../../assets/images/contract.png";
 const Hireme = () => {
   return (

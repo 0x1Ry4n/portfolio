@@ -1,6 +1,5 @@
-import React from "react";
-import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt, FaReact, FaReceipt, FaJava  } from "react-icons/fa";
-import { SiTypescript, SiMicropython, SiMongodb  } from "react-icons/si";
+import { FaHtml5, FaPython, FaCss3Alt, FaDocker, FaAws, FaGitAlt, FaReact  } from "react-icons/fa";
+import { SiTypescript, SiMicropython, SiMongodb, SiMicrosoftsqlserver, SiDelphi  } from "react-icons/si";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 
@@ -15,68 +14,74 @@ const Skills = () => {
     {
       title: "CSS3",
       logo: <FaCss3Alt />,
-      level: "Intermediário",
-      count: 70,
+      level: "Avançado",
+      count: 80,
     },  
     {
       title: "Javascript",
       logo: <IoLogoJavascript />,
-      level: "Intermediário",
-      count: 70,
+      level: "Avançado",
+      count: 80,
     },
     {
       title: "Typescript",
       logo: <SiTypescript/>,
+      level: "Avançado",
+      count: 80,
+    },
+    {
+      title: "Python",
+      logo: <FaPython />,
+      level: "Avançado",
+      count: 75,
+    },
+    {
+      title: "NodeJS",
+      logo: <IoLogoNodejs/>,
+      level: "Intermediário",
+      count: 65,
+    },
+    {
+      title: "Micropython",
+      logo: <SiMicropython />,
       level: "Intermediário",
       count: 60,
     },
     {
-      title: "Java",
-      logo:  <FaJava />,
+      title: "PostgreSQL",
+      logo: <BiLogoPostgresql />,
       level: "Intermediário",
-      count: 50,
+      count: 60
+    },
+    {
+      title: "SQL Server", 
+      logo: <SiMicrosoftsqlserver />,
+      level: "Intermediário",
+      count: 60
+    },
+    {
+      title: "MongoDB",
+      logo: <SiMongodb />,
+      level: "Intermediário",
+      count: 50
+    },
+    {
+      title: "ReactJS",
+      logo: <FaReact />,
+      level: "Intermediário",
+      count: 50
+    },
+    {
+      title: "Delphi",
+      logo: <SiDelphi />,
+      level: "Intermediário", 
+      count: 50
     },
     {
       title: "Git",
       logo: <FaGitAlt />,
       level: "Intermediário",
       count: 50,
-    },
-    {
-      title: "NodeJS",
-      logo: <IoLogoNodejs/>,
-      level: "Intermediário",
-      count: 50,
-    },
-    {
-      title: "Python",
-      logo: <FaPython />,
-      level: "Intermediário",
-      count: 50,
-    },
-    {
-      title: "Micropython",
-      logo: <SiMicropython />,
-      level: "Intermediário",
-      count: 50,
-    },
-    {
-      title: "PostgreSQL",
-      logo: <BiLogoPostgresql />,
-      level: "Intermediário",
-      count: 40
-    },
-    {
-      title: "MongoDB",
-      logo: <SiMongodb />,
-      level: "Básico",
-      count: 30
-    },
-    {
-      title: "ReactJS",
-      logo: <FaReact />,
-      level: "Básico",
-      count: 30
     },
     {
       title: "Docker",

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import SimpleAlert from "../Alert/SimpleAlert";
 import emailjs from "@emailjs/browser";
 
