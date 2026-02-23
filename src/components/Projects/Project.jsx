@@ -5,10 +5,12 @@ import project7 from "../../assets/images/project7.png";
 import project9 from "../../assets/images/project9.png";
 import project10 from "../../assets/images/project10.png";
 import project11 from "../../assets/images/project11.png";
-import project12 from "../../assets/images/project12.jpg";
 import project13 from "../../assets/images/project13.jpg";
 import project14 from "../../assets/images/project14.jpg";
 import project15 from "../../assets/images/project15.png";
+import project16 from "../../assets/images/project16.jpg"
+import project17 from "../../assets/images/project17.jpg"
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { IoPerson } from "react-icons/io5";
@@ -22,7 +24,21 @@ const Project = () => {
   };
 
   const projects = [
-  
+    {
+      img: project16,
+      name: "Apontamento de Produção com Raspberry pi (Python)",
+      github_link: "",
+      live_link: "",
+      project_type: projectType.work,
+    },
+     
+    {
+      img: project15,
+      name: "Serviço gRPC de detecção de aruco tags (NodeJS e Python)",
+      github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
+      live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
+      project_type: projectType.work,
+    },
     {
       img: project13,
       name: "Watchdog - Wi-Fi e Ethernet (Micropython)",
@@ -30,26 +46,18 @@ const Project = () => {
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       project_type: projectType.work,
     },
-   
-    {
-      img: project15,
-      name: "Serviço gRPC de detecção e registro de aruco tags (Python)",
-      github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
-      live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
-      project_type: projectType.work,
-    },
     {
       img: project14,
-      name: "Bot de Whatsapp - WppConnect.js (Javascript)",
+      name: "Bot de Whatsapp - WppConnect.js (Node.js)",
       github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       project_type: projectType.work,
     },
     {
-      img: project12,
-      name: "Stock Api - em dev - (Java, Spring Boot, Docker)",
-      github_link: "https://github.com/0x1Ry4n/api-estoque.git",
-      live_link: "",
+      img: project17, 
+      name: "Sistema de Gestão de Estoque - (Spring Boot e React.js)",
+      github_link: "https://github.com/0x1Ry4n/api-estoque",
+      live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       project_type: projectType.personal,
     },
     {
@@ -60,44 +68,17 @@ const Project = () => {
       project_type: projectType.personal,
     },
     {
-      img: project12,
-      name: "Orgbooks API - em dev - (Typescript, NodeJS, PostgreSQL)",
-      github_link: "https://github.com/0x1Ry4n/orgbooks-typescript.git",
-      live_link: "",
-      project_type: projectType.personal,
-    },
-    {
       img: project5,
       name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
       github_link: "https://github.com/0x1Ry4n/Orgbooks",
       live_link: "",
       project_type: projectType.personal,
     },
-    {
-      img: project9,
-      name: "Monitor de Diretórios (Python)", 
-      github_link: "https://github.com/0x1Ry4n/directory-monitor.git",
-      live_link: "",
-      project_type: projectType.personal,
-    },
+
     {
       img: project10,
-      name: "Gerador de Crachás (Python)", 
+      name: "Gerador de Crachás (HTML5, CSS3 e Python)", 
       github_link: "https://github.com/0x1Ry4n/BadgeMaker.git",
-      live_link: "",
-      project_type: projectType.personal,
-    },
-    {
-      img: project2,
-      name: "Landing Page - ReactJS",
-      github_link: "https://github.com/0x1Ry4n/landing-page",
-      live_link: "https://l4ndingpage.netlify.app/",
-      project_type: projectType.personal,
-    },
-    {
-      img: project7,
-      name: "Catch Game - C++",
-      github_link: "https://github.com/0x1Ry4n/Catch-game",
       live_link: "",
       project_type: projectType.personal,
     },

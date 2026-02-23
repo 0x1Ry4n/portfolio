@@ -38,8 +38,8 @@ const Skills = () => {
     {
       title: "NodeJS",
       logo: <IoLogoNodejs/>,
-      level: "Intermediário",
-      count: 65,
+      level: "Avançado",
+      count: 70,
     },
     {
       title: "Micropython",
