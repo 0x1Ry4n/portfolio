@@ -10,6 +10,7 @@ import project14 from "../../assets/images/project14.jpg";
 import project15 from "../../assets/images/project15.png";
 import project16 from "../../assets/images/project16.jpg"
 import project17 from "../../assets/images/project17.jpg"
+import project18 from "../../assets/images/project18.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -31,7 +32,6 @@ const Project = () => {
       live_link: "",
       project_type: projectType.work,
     },
-     
     {
       img: project15,
       name: "Serviço gRPC de detecção de aruco tags (NodeJS e Python)",
@@ -54,7 +54,7 @@ const Project = () => {
       project_type: projectType.work,
     },
     {
-      img: project17, 
+      img: project17,
       name: "Sistema de Gestão de Estoque - (Spring Boot e React.js)",
       github_link: "https://github.com/0x1Ry4n/api-estoque",
       live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
@@ -62,7 +62,7 @@ const Project = () => {
     },
     {
       img: project11,
-      name: "Assistente de voz e pose estimation (Python)", 
+      name: "Assistente de voz e pose estimation (Python)",
       github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
       live_link: "",
       project_type: projectType.personal,
@@ -74,10 +74,16 @@ const Project = () => {
       live_link: "",
       project_type: projectType.personal,
     },
-
+    {
+      img: project18,
+      name: "Portfólio MBE Digital (React.js e TailwindCSS)",
+      github_link: "",
+      live_link: "https://mbedigital.vercel.app/",
+      project_type: projectType.personal
+    },
     {
       img: project10,
-      name: "Gerador de Crachás (HTML5, CSS3 e Python)", 
+      name: "Gerador de Crachás (HTML5, CSS3 e Python)",
       github_link: "https://github.com/0x1Ry4n/BadgeMaker.git",
       live_link: "",
       project_type: projectType.personal,
@@ -113,7 +119,7 @@ const Project = () => {
           Projetos <span className="text-gold">Desenvolvidos</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">
-          Projetos profissionais e pessoais  
+          Projetos profissionais e pessoais
         </p>
       </div>
       <br />
