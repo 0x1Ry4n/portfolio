@@ -11,6 +11,8 @@ import project15 from "../../assets/images/project15.png";
 import project16 from "../../assets/images/project16.jpg"
 import project17 from "../../assets/images/project17.jpg"
 import project18 from "../../assets/images/project18.png"
+import project19 from "../../assets/images/project19.png"
+import project20 from "../../assets/images/project20.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -30,6 +32,20 @@ const Project = () => {
       name: "Apontamento de Produção com Raspberry pi (Python)",
       github_link: "",
       live_link: "",
+      project_type: projectType.work,
+    },
+    {
+      img: project19,
+      name: "Portal do Fornecedor - Cozimax (React.js e Horse Delphi)",
+      github_link: "",
+      live_link: "https://www.fornecedor.cozimax.com.br",
+      project_type: projectType.work,
+    },
+    {
+      img: project20,
+      name: "Portal do Cliente - Metaperfil (React.js e .Net Core)",
+      github_link: "",
+      live_link: "https://portalmetaperfil.com.br/Conta/Entrar",
       project_type: projectType.work,
     },
     {
