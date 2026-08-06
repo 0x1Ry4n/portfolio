@@ -1,5 +1,28 @@
 import hireMe from "../../assets/images/contract.png";
-const Hireme = () => {
+
+const Hireme = ({ isLoading }) => {
+  if (isLoading) {
+    return (
+      <section id="hireme" className="py-10 px-3 text-white animate-pulse">
+        <div className="text-center">
+          <div className="h-10 bg-gray-700 rounded w-44 mx-auto" />
+        </div>
+        <div className="bg-gray-900 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[28rem] mt-12 flex gap-6 lg:flex-row flex-col-reverse items-center shadow-3xl">
+          <div className="flex-1 w-full">
+            <div className="h-8 bg-gray-700 rounded w-3/4 mx-auto lg:mx-0 mb-6" />
+            <div className="space-y-3">
+              <div className="h-5 bg-gray-700 rounded w-full" />
+              <div className="h-5 bg-gray-700 rounded w-full" />
+              <div className="h-5 bg-gray-700 rounded w-4/5" />
+            </div>
+            <div className="h-12 bg-gray-700 rounded-lg w-56 mt-10 mx-auto lg:mx-0" />
+          </div>
+          <div className="lg:w-[20rem] lg:h-[20rem] w-48 h-48 bg-gray-700 rounded-xl" />
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="hireme" className="py-10 px-3 text-white ">
       <div className="text-center">
@@ -7,11 +30,11 @@ const Hireme = () => {
           Negócios?<span className="text-gold"></span>
         </h3>
       </div>
-      <div className="bg-gray-900 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[28rem] text-justify mt-12 flex gap-6 lg:flex-row flex-col-reverse items-center shadow-3xl">
+      <div className="bg-gray-900 relative px-8 rounded-2D2xl py-5 lg:max-w-4xl mx-auto min-h-[28rem] text-justify mt-12 flex gap-6 lg:flex-row flex-col-reverse items-center shadow-3xl">
         <div>
           <h2 className="text-2xl text-center font-semibold">Você tem alguma proposta de projeto?</h2>
           <p className="lg:text-left text-justify break-all max-w-lg text-lg mt-4 text-gray-200 leading-6">
-          Estou disponível para conversar e agendar uma reunião para explorarmos juntos o potencial dessa proposta. Para facilitar o contato, você pode encontrar meus dados de contato clicando no botão abaixo. 👇
+            Estou disponível para conversar e agendar uma reunião para explorarmos juntos o potencial dessa proposta. Para facilitar o contato, você pode encontrar meus dados de contato clicando no botão abaixo. 👇
           </p>
           <button className="btn-primary mt-10 shadow-3xl transition duration-500 ease-in-out hover:shadow-3xlh">
             <a href="#contact">Me mande uma mensagem!</a>

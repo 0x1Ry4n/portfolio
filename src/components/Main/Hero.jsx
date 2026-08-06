@@ -2,10 +2,12 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import hero from "../../assets/images/hero.png";
 
-const Hero = () => {
+const Hero = ({ isLoading }) => {
   const el = useRef(null);
 
   useEffect(() => {
+    if (isLoading || !el.current) return;
+
     const typed = new Typed(el.current, {
       strings: ["Ryan", "", "Ryan Lucas."],
       startDelay: 300,
@@ -18,22 +20,38 @@ const Hero = () => {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [isLoading]);
 
   const social_media = [
-    {
-      icon: "logo-github",
-      link: "https://github.com/0x1Ry4n",
-    },
-    {
-      icon: "logo-linkedin",
-      link: "https://www.linkedin.com/in/ryan-lucas-a1747a214/",
-    },
-    {
-      icon: "logo-instagram",
-      link: "https://www.instagram.com/ryan_luckaz",
-    },
+    { icon: "logo-github", link: "https://github.com/0x1Ry4n" },
+    { icon: "logo-linkedin", link: "https://www.linkedin.com/in/ryan-lucas-a1747a214/" },
+    { icon: "logo-instagram", link: "https://www.instagram.com/ryan_luckaz" },
   ];
+
+  if (isLoading) {
+    return (
+      <section id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center animate-pulse">
+        <div className="flex-1 flex items-center justify-center h-full">
+          <div className="md:w-[400px] md:h-[400px] w-[275px] h-[275px] bg-gray-700 rounded-full" />
+        </div>
+
+        <div className="flex-1 w-full px-5">
+          <div className="md:text-left text-center">
+            <div className="h-14 bg-gray-700 rounded w-32 md:mx-0 mx-auto mb-4" />
+            <div className="h-10 bg-gray-700 rounded w-64 md:mx-0 mx-auto mb-8" />
+            <div className="h-12 bg-gray-800 rounded w-80 md:mx-0 mx-auto mb-8" />
+            <div className="h-12 bg-gray-700 rounded-lg w-40 md:mx-0 mx-auto mb-8" />
+            <div className="flex items-center md:justify-start justify-center gap-5">
+              <div className="w-8 h-8 bg-gray-700 rounded-full" />
+              <div className="w-8 h-8 bg-gray-700 rounded-full" />
+              <div className="w-8 h-8 bg-gray-700 rounded-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section
       id="home"
@@ -68,7 +86,7 @@ const Hero = () => {
                 key={social.icon}
                 className="text-mediumGray hover:text-white cursor-pointer "
               >
-                <a href={social.link} target="_blank">
+                <a href={social.link} target="_blank" rel="noreferrer">
                   <ion-icon name={social.icon}></ion-icon>
                 </a>
               </div>
