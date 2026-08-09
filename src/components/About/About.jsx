@@ -53,7 +53,9 @@ const About = ({ isLoading }) => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto text-lg">
-                Sou um desenvolvedor Full Stack focado na manutenção de sistemas ERP, desenvolvimento de aplicações web e integrações via API, aliando base técnica à visão de processos de negócio. No backend, trabalho com Python, Node.js e Horse Delphi sob ambientes padronizados com Docker, aplicando SOLID, Clean Code e testes automatizados (unitários, integração e E2E). No frontend, utilizo React.js para construir interfaces modernas e componentizadas para aplicações corporativas de média e alta complexidade. Minha experiência prática inclui o desenvolvimento de telas de produção, geração de boletos e emissão de notas fiscais (NF-e e CT-e) no ecossistema Delphi. Também criei portais corporativos estratégicos que integraram clientes e fornecedores, além de um sistema de IoT com Raspberry Pi para apontamento automático de máquinas, gerando redução de custos e aumento de produtividade industrial.
+                Sou desenvolvedor Full Stack com foco em sistemas ERP, aplicações web e integrações via APIs REST, combinando conhecimento técnico com visão de processos de negócio.
+Formado em Desenvolvimento de Sistemas pela ETEC e em Informática para Negócios pela FATEC Rio Preto, atuo atualmente na evolução do ERP Micasoft na Cozimax, utilizando Delphi, SQL Server e Horse, além do desenvolvimento de interfaces com React.js.
+Possuo experiência com Python, Node.js, Java (JSP, Jakarta), Docker, SQL Server e Oracle. No ramo das automações, já trabalhei com Raspberry Pi, ESP32, desenvolvendo soluções com MicroPython e OpenCV. Também desenvolvi APIs (REST, XML, etc), realizando integrações entre sistemas.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
