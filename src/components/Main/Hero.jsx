@@ -24,13 +24,19 @@ const Hero = ({ isLoading }) => {
 
   const social_media = [
     { icon: "logo-github", link: "https://github.com/0x1Ry4n" },
-    { icon: "logo-linkedin", link: "https://www.linkedin.com/in/ryan-lucas-a1747a214/" },
+    {
+      icon: "logo-linkedin",
+      link: "https://www.linkedin.com/in/ryan-lucas-a1747a214/",
+    },
     { icon: "logo-instagram", link: "https://www.instagram.com/ryan_luckaz" },
   ];
 
   if (isLoading) {
     return (
-      <section id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center animate-pulse">
+      <section
+        id="home"
+        className="min-h-screen flex py-10 md:flex-row flex-col items-center animate-pulse"
+      >
         <div className="flex-1 flex items-center justify-center h-full">
           <div className="md:w-[400px] md:h-[400px] w-[275px] h-[275px] bg-gray-700 rounded-full" />
         </div>

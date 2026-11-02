@@ -19,37 +19,109 @@ import { Pagination, Autoplay } from "swiper";
 
 const Project = ({ isLoading }) => {
   const projectType = {
-    work: 'Profissional',
-    personal: 'Pessoal'
+    work: "Profissional",
+    personal: "Pessoal",
   };
 
   const projects = [
-    { img: project16, name: "Apontamento de Production com Raspberry pi (Python)", github_link: "", live_link: "", project_type: projectType.work },
-    { img: project19, name: "Portal do Fornecedor - Cozimax (React.js e Horse Delphi)", github_link: "", live_link: "https://www.fornecedor.cozimax.com.br", project_type: projectType.work },
-    { img: project20, name: "Portal do Cliente - Metaperfil (React.js e .Net Core)", github_link: "", live_link: "https://portalmetaperfil.com.br/Conta/Entrar", project_type: projectType.work },
-    { img: project15, name: "Serviço gRPC de detecção de aruco tags (NodeJS e Python)", github_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop", live_link: "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop", project_type: projectType.work },
-    { img: project13, name: "Watchdog - Wi-Fi e Ethernet (Micropython)", github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE", live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE", project_type: projectType.work },
-    { img: project14, name: "Bot de Whatsapp - WppConnect.js (Node.js)", github_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE", live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE", project_type: projectType.work },
-    { img: project17, name: "Sistema de Gestão de Estoque - (Spring Boot e React.js)", github_link: "https://github.com/0x1Ry4n/api-estoque", live_link: "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE", project_type: projectType.personal },
-    { img: project11, name: "Assistente de voz e pose estimation (Python)", github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git", live_link: "", project_type: projectType.personal },
-    { img: project5, name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)", github_link: "https://github.com/0x1Ry4n/Orgbooks", live_link: "", project_type: projectType.personal },
-    { img: project18, name: "Portfólio MBE Digital (React.js e TailwindCSS)", github_link: "", live_link: "https://mbedigital.vercel.app/", project_type: projectType.personal },
-    { img: project10, name: "Gerador de Crachás (HTML5, CSS3 e Python)", github_link: "https://github.com/0x1Ry4n/BadgeMaker.git", live_link: "", project_type: projectType.personal },
+    {
+      img: project18,
+      name: "Portfólio MBE Digital (React.js e TailwindCSS)",
+      github_link: "",
+      live_link: "https://mbedigital.vercel.app/",
+      project_type: projectType.work,
+    },
+    {
+      img: project16,
+      name: "Apontamento de Produção com Raspberry pi (Python)",
+      github_link: "",
+      live_link: "",
+      project_type: projectType.work,
+    },
+    {
+      img: project19,
+      name: "Portal do Fornecedor - Cozimax (React.js e Horse Delphi)",
+      github_link: "",
+      live_link: "https://www.fornecedor.cozimax.com.br",
+      project_type: projectType.work,
+    },
+    {
+      img: project20,
+      name: "Portal do Cliente - Metaperfil (React.js e .Net Core)",
+      github_link: "",
+      live_link: "https://portalmetaperfil.com.br/Conta/Entrar",
+      project_type: projectType.work,
+    },
+    {
+      img: project15,
+      name: "Serviço gRPC de detecção de aruco tags (NodeJS e Python)",
+      github_link:
+        "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
+      live_link:
+        "https://www.linkedin.com/posts/0xryan-lucas_python-opencv-arucotags-activity-7137991808076222465-haWd?utm_source=share&utm_medium=member_desktop",
+      project_type: projectType.work,
+    },
+    {
+      img: project13,
+      name: "Watchdog - Wi-Fi e Ethernet (Micropython)",
+      github_link:
+        "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      live_link:
+        "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      project_type: projectType.work,
+    },
+    {
+      img: project14,
+      name: "Bot de Whatsapp - WppConnect.js (Node.js)",
+      github_link:
+        "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      live_link:
+        "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      project_type: projectType.work,
+    },
+    {
+      img: project17,
+      name: "Sistema de Gestão de Estoque - (Spring Boot e React.js)",
+      github_link: "https://github.com/0x1Ry4n/api-estoque",
+      live_link:
+        "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
+      project_type: projectType.personal,
+    },
+    {
+      img: project11,
+      name: "Assistente de voz e pose estimation (Python)",
+      github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
+      live_link: "",
+      project_type: projectType.personal,
+    },
+    {
+      img: project5,
+      name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
+      github_link: "https://github.com/0x1Ry4n/Orgbooks",
+      live_link: "",
+      project_type: projectType.personal,
+    },
   ];
 
   const getProjectTypeClass = (type) => {
     switch (type) {
-      case "Profissional": return "bg-blue-600 border border-blue-400/20";
-      case "Pessoal": return "bg-emerald-600 border border-emerald-400/20";
-      default: return "bg-gray-800";
+      case "Profissional":
+        return "bg-blue-600 border border-blue-400/20";
+      case "Pessoal":
+        return "bg-emerald-600 border border-emerald-400/20";
+      default:
+        return "bg-gray-800";
     }
   };
 
   const getProjectIcon = (type) => {
     switch (type) {
-      case "Profissional": return <GrUserWorker className="inline mr-1.5" />;
-      case "Pessoal": return <IoPerson className="inline mr-1.5" />;
-      default: return null;
+      case "Profissional":
+        return <GrUserWorker className="inline mr-1.5" />;
+      case "Pessoal":
+        return <IoPerson className="inline mr-1.5" />;
+      default:
+        return null;
     }
   };
 
@@ -109,7 +181,6 @@ const Project = ({ isLoading }) => {
           {projects.map((project_info, i) => (
             <SwiperSlide key={i} className="h-auto">
               <div className="h-full flex flex-col justify-between p-4 bg-[#966f28] rounded-xl border border-white/5 shadow-md">
-
                 {/* Bloco de Mídia e Conteúdo */}
                 <div className="w-full">
                   <div className="overflow-hidden rounded-lg bg-black/10">
@@ -150,12 +221,13 @@ const Project = ({ isLoading }) => {
                     )}
                   </div>
 
-                  <p className={`text-white rounded-lg px-2.5 py-1.5 text-xs font-semibold tracking-wide flex items-center shadow-sm ${getProjectTypeClass(project_info.project_type)}`}>
+                  <p
+                    className={`text-white rounded-lg px-2.5 py-1.5 text-xs font-semibold tracking-wide flex items-center shadow-sm ${getProjectTypeClass(project_info.project_type)}`}
+                  >
                     {getProjectIcon(project_info.project_type)}
                     {project_info.project_type}
                   </p>
                 </div>
-
               </div>
             </SwiperSlide>
           ))}

@@ -53,9 +53,18 @@ const About = ({ isLoading }) => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto text-lg">
-                Sou desenvolvedor Full Stack com foco em sistemas ERP, aplicações web e integrações via APIs REST, combinando conhecimento técnico com visão de processos de negócio.
-Formado em Desenvolvimento de Sistemas pela ETEC e em Informática para Negócios pela FATEC Rio Preto, atuo atualmente na evolução do ERP Micasoft na Cozimax, utilizando Delphi, SQL Server e Horse, além do desenvolvimento de interfaces com React.js.
-Possuo experiência com Python, Node.js, Java (JSP, Jakarta), Docker, SQL Server e Oracle. No ramo das automações, já trabalhei com Raspberry Pi, ESP32, desenvolvendo soluções com MicroPython e OpenCV. Também desenvolvi APIs (REST, XML, etc), realizando integrações entre sistemas.
+                Sou desenvolvedor Full Stack com foco em sistemas ERP,
+                aplicações web e integrações via APIs REST, combinando
+                conhecimento técnico com visão de processos de negócio. Formado
+                em Desenvolvimento de Sistemas pela ETEC e em Informática para
+                Negócios pela FATEC Rio Preto, atuo atualmente na evolução do
+                ERP Micasoft na Cozimax, utilizando Delphi, SQL Server e Horse,
+                além do desenvolvimento de interfaces com React.js. Possuo
+                experiência com Python, Node.js, Java (JSP, Jakarta), Docker,
+                SQL Server e Oracle. No ramo das automações, já trabalhei com
+                Raspberry Pi, ESP32, desenvolvendo soluções com MicroPython e
+                OpenCV. Também desenvolvi APIs (REST, XML, etc), realizando
+                integrações entre sistemas.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
