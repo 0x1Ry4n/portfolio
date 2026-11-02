@@ -2,9 +2,9 @@ import aboutImg from "../../assets/images/perfil.gif";
 
 const About = ({ isLoading }) => {
   const info = [
-    { text: "📘 Tempo de estudo (anos)", count: "05" },
-    { text: "💻 Projetos em produção", count: "06" },
-    { text: "👔 Experiência no mercado (anos)", count: "03" },
+    { text: "📘 Tempo de estudo (anos)", count: "+7" },
+    { text: "💻 Projetos em produção", count: "05" },
+    { text: "👔 Experiência no mercado (anos)", count: "04" },
   ];
 
   if (isLoading) {
