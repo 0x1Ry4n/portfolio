@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import project5 from "../../assets/images/project5.jpg";
-import project10 from "../../assets/images/project10.png";
 import project11 from "../../assets/images/project11.png";
 import project13 from "../../assets/images/project13.jpg";
 import project14 from "../../assets/images/project14.jpg";
@@ -10,6 +9,7 @@ import project17 from "../../assets/images/project17.jpg";
 import project18 from "../../assets/images/project18.png";
 import project19 from "../../assets/images/project19.png";
 import project20 from "../../assets/images/project20.png";
+import project21 from "../../assets/images/project21.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -29,6 +29,13 @@ const Project = ({ isLoading }) => {
       name: "Portfólio MBE Digital (React.js e TailwindCSS)",
       github_link: "",
       live_link: "https://mbedigital.vercel.app/",
+      project_type: projectType.work,
+    },
+    {
+      img: project21,
+      name: "Ninho - Enxoval de Casamento (React.js e Node.js)",
+      github_link: "",
+      live_link: "https://ninho-zy81.onrender.com/",
       project_type: projectType.work,
     },
     {
