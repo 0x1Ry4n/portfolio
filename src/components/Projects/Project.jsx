@@ -10,6 +10,7 @@ import project18 from "../../assets/images/project18.png";
 import project19 from "../../assets/images/project19.png";
 import project20 from "../../assets/images/project20.png";
 import project21 from "../../assets/images/project21.png";
+import project22 from "../../assets/images/project22.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -40,7 +41,7 @@ const Project = ({ isLoading }) => {
     },
     {
       img: project16,
-      name: "Apontamento de Produção com Raspberry pi (Python)",
+      name: "Apontamento de Produção Raspberry pi - Cozimax (Python)",
       github_link: "",
       live_link: "",
       project_type: projectType.work,
@@ -79,7 +80,7 @@ const Project = ({ isLoading }) => {
     },
     {
       img: project14,
-      name: "Bot de Whatsapp - WppConnect.js (Node.js)",
+      name: "Bot de Whatsapp lib WppConnect.js (Node.js)",
       github_link:
         "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       live_link:
@@ -87,23 +88,23 @@ const Project = ({ isLoading }) => {
       project_type: projectType.work,
     },
     {
+      img: project22,
+      name: "UniPass TCC Fatec (React.js e Node.js)",
+      github_link: "https://github.com/0x1Ry4n/trabalho-graduacao.git",
+      live_link: "",
+      project_type: projectType.personal,
+    },
+    {
       img: project17,
-      name: "Sistema de Gestão de Estoque - (Spring Boot e React.js)",
+      name: "Gestão de Estoque Fatec (Spring Boot e React.js)",
       github_link: "https://github.com/0x1Ry4n/api-estoque",
       live_link:
         "https://www.linkedin.com/in/0xryan-lucas/details/projects/?profileId=ACoAADYssDMB_jNk-hTxKGZuDctZFJBtpHEv7pE",
       project_type: projectType.personal,
     },
     {
-      img: project11,
-      name: "Assistente de voz e pose estimation (Python)",
-      github_link: "https://github.com/0x1Ry4n/john-voice-assistant.git",
-      live_link: "",
-      project_type: projectType.personal,
-    },
-    {
       img: project5,
-      name: "Orgbooks TCC - Livros Didáticos  (Javascript, PHP e MySQL)",
+      name: "Orgbooks TCC Etec (Javascript, PHP e MySQL)",
       github_link: "https://github.com/0x1Ry4n/Orgbooks",
       live_link: "",
       project_type: projectType.personal,
