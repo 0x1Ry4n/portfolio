@@ -36,7 +36,7 @@ const Project = ({ isLoading }) => {
       img: project21,
       name: "Ninho - Enxoval de Casamento (React.js e Node.js)",
       github_link: "",
-      live_link: "https://ninho-zy81.onrender.com/",
+      live_link: "https://enxovalninho.com.br/#/inicio",
       project_type: projectType.work,
     },
     {
